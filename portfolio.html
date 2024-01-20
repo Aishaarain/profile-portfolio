@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <title>aisha arain_portfolio</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: white;
+            color: black;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(90, 9, 90);
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 10px;
+        }
+
+        nav ul li a:hover {
+            color: rgb(189, 149, 227);
+            font-size: 1.01rem;
+            font-weight: bold;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .icon {
+            font-size: 0.80rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 0 23px;
+        }
+
+        .firstsection div {
+            width: 30%;
+        }
+
+        .leftsection {
+            width: 10%;
+        }
+
+        .rightsection {
+            width: 60%;
+            margin: 50px;
+            font-size: 1.5rem;
+        }
+
+        .purple {
+            color: rgb(83, 37, 126);
+        }
+
+        .secondsection {
+            text-align: center;
+        }
+
+        .services {
+            margin-left: 0px;
+            padding-left: 0px;
+            box-sizing: border-box;
+            box-shadow: -1px 0 10px #0a0909
+        }
+
+        .title h1 {
+            text-align: left;
+            padding-top: 40px;
+            margin-left: 120px;
+            font-size: 42px;
+            color: rgb(83, 37, 126);
+        }
+
+        .title height::after {
+            content: "";
+            height: 4px;
+            width: 230px;
+            background-color: white;
+            display: block;
+            margin: auto;
+        }
+
+        .services {
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 75px auto;
+            text-align: center;
+        }
+
+        .card {
+            width: 60%;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            margin: 0px 20px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: rgb(137, 88, 137);
+
+        }
+
+        .card .icon {
+            font-size: 35px;
+            margin-bottom: 25px;
+        }
+
+        .secondsection h1 {
+            text-align: left;
+            margin: 70px;
+            padding-top: 10px;
+            font-size: 42px;
+            color: rgb(83, 37, 126);
+        }
+
+        .h {
+            width: 750px;
+            border-bottom: 5px solid black;
+            margin: 5px;
+            margin-left: 225px;
+        }
+
+        .cover {
+            width: 200%;
+            height: 50px;
+            margin-top: 0.5px;
+            background-color: white;
+            display: flex;
+        }
+
+        .box {
+
+            width: 15%;
+            height: 200px;
+            margin: 10px;
+            box-shadow: -1px 0 10px #0a0909;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .box2 {
+            width: 15%;
+            height: 200px;
+            margin: 10px;
+            box-shadow: -1px 0 10px #0a0909;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .box3 {
+            width: 15%;
+            height: 200px;
+            margin: 10px;
+            box-shadow: -1px 0 5px #0a0909;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .leaverecommendation {
+
+            position: absolute;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            margin-bottom: 300px;
+            padding-top: 100px;
+            left: 50%;
+        }
+
+        .Recommendationbox {
+            text-align: left;
+            margin: 70px;
+            padding-top: 10px;
+            font-size: 42px;
+            color: rgb(83, 37, 126);
+        }
+
+        .Recommendationbox input {
+            margin-top: 20px;
+            width: 100%;
+            height: 50px;
+            padding: 0 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px black;
+
+        }
+
+        .leaverecommendation button {
+            color: rgb(112, 64, 158);
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .popup {
+            width: 400px;
+            background: #fff;
+            border-radius: 6px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 0 30px 30px;
+            color: #333;
+        }
+        .popup h2{
+            font-size: 38px;
+            font-weight: 500;
+            margin: 30px 0px 10px;
+        }
+        .popup button{
+            padding: 10 0px;
+            width: 100%;
+            margin-top: 50px;
+            background: #6fd649;
+            color: #fff;
+            border: 0;
+            outline: none;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            
+        }
+        .openpopup{
+visibility: visible;
+top: 50%;
+transform: translate(-50%,-50%) scale(1);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+
+            <div class="left">aisha's portfolio
+                <br>
+                <div class="icon"><i class="fa-solid fa-envelope"></i> aisha.103.aaa@gmail.com
+                    <br><i class="fa-solid fa-phone"></i> 02165324
+                </div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="aboutme.html">About me</li></a>
+                    <li><a href="/">skills</li>
+                    <a href="/">
+                        <li><a href="/">Projects</a></li>
+                        <a href="/">
+                            <li><a href="/">Recommendations</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <img src="data:image/png;base64,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"
+                    alt style="width: 80%; 
+               margin: 30px;">
+            </div>
+            <div class="rightsection">
+                <span class="purple">
+                    <h1>Hi,I Am Aisha!</h1>
+                </span>
+                I am a full stack developer with a 2 years of experience in both application and presentation layers.
+                I have worked in application and microsoft services deployed on IBM cloud.
+                I am a avid user of IBM Watson services and have worked on watson Assistance ,
+                NlU,sentiments analyser to name a few.
+            </div>
+        </section>
+        <div class="section">
+            <div class="title">
+                <h1>Skills</h1>
+            </div>
+            <div class="services">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <h1>html5</h1>
+                    <h5>2 years experience</h5>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <h1>java</h1>
+                    <h5>1 years experience</h5>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <h1>css</h1>
+                    <h5>1.5 years experience</h5>
+                </div>
+            </div>
+        </div>
+        <div class="secondsection">
+            <div class="title">
+                <h1>projects</h1>
+                <h3>chatbot</h3>
+                <h4>
+                    <li>develop a secure website integrated with chatbot for a automobile client using
+                        HTML,CSS,JavaScript
+                        and IBM <br> Watson Assistant.</li>
+                </h4>
+                <div class="h">
+                </div>
+                <br><br>
+
+                <h3>Sentiment Analyser</h3>
+                <h4>
+                    <li>developed and deployed a sentiment analyser fot the box reviews section of an ecommerce platform
+                        using IBM.</li>
+                </h4>
+                <div class="h">
+                </div>
+                <br><br>
+                <h3>fashion website</h3>
+                <h4>
+                    <li>create a styled multi page website for a new player in the fashion industry and integrated it
+                        with shopping card<br>,using strip for payment gateway.</li>
+                </h4>
+                <div class="h">
+                </div>
+            </div>
+            <div class="thirdsection">
+                <h1>Recommendations</h1>
+            </div>
+            <div class="cover">
+                <div class="box">
+                    <p>"she is a very quick learner<br> and quickly grasps key concepts<br> of web development. she got
+                        <br>a great
+                        attitude and she <br>is an exellent team player.<br>she has a curious mind<br> and asks the
+                    </p>
+                </div>
+                <div class="box2">
+                    <p>working with her has been <br>an awesome experience. she is <br>highly knowledgeable and always
+                        goes<br> the
+                        extra step to make<br> sure everything is right. for <br>any future projects that need <br>her
+                        expertise i would
+                        definitely<br> want to work with her again.</p>
+                </div>
+                <div class="box3">
+                    <p>i have workes along with<br> aisha during the initial phase<br> of our revenue which needed<br>
+                        web
+                        development.she is a<br> committed resource who has in<br> dept knowledge about the
+                        domain.<br>she will be an
+                        asset<br> for any organization</p>
+                </div>
+            </div>
+        </div><br><br><br><br><Br><br>
+        <div class="Recommendationbox">
+            <h4>Leave Recommendations</h4>
+        </div>
+        <div class="leaverecommendation"><br>
+            <form action="#">
+                <input type="text" name="name" placeholder="Name(optional)"><br><br>
+                <textarea name="recommendation" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <div class="container">
+                    <button type="submit" class="btn" onclick="openpopup()">Submit</button>
+                    <div class="popup" id="popup">
+                        <h2>Thank you!</h2>
+                        <p>Your Message Have Been Submitted</p>
+                        <button type="button" onclick="closepopup()">Ok</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+       <script>
+        let popup= document.getElementById("popup");
+        function openpopup(){
+popup.classList.add("popup");
+        }
+        function closepopup{
+            popup.classList.remove("popup");
+        }
+       </script>
+    </main>
+</body>
+
+</html>
